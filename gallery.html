@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery - Ahmad Janjua's Portfolio</title>
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-bar">
+            <div class="window-buttons">
+                <a href="index.html"><div class="window-button close"></div></a>
+                <a href="projects.html"><div class="window-button maximize"></div></a>
+                <a href="gallery.html"><div class="window-button minimize"></div></a>
+            </div>
+        </div>
+
+        <!-- Back to Main Links -->
+        <div class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Links To Pages</span>
+        </div>
+
+        <div class="connect">
+            <p><a href="index.html">Home</a> - Back to the main page</p>
+            <p><a href="projects.html">Projects</a> - View my project collection</p>
+        </div>
+
+        <!-- Command for Gallery -->
+        <div class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Gallery</span>
+        </div>
+
+        <section id="photography" class="photography">
+            <p></p>
+            <div class="photography-container" id="photography-container"></div>
+        </section>
+
+        <!-- Wait for cmd aesthetic -->
+        <div class="pending">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ 
+            <textarea name="r" id="r" class="terminal-input"></textarea>
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        // Dynamically Load and Sort Photography Images by Aspect Ratio
+        const galleryContainer = document.getElementById("photography-container");
+
+        if (galleryContainer) {
+            const imageGrid = document.createElement("div");
+            imageGrid.classList.add("image-grid");
+
+            const images = [];
+
+            for (let i = 1; i <= 56; i++) {
+                const img = document.createElement("img");
+                img.src = `photography/(${i}).jpg`;
+                img.alt = `Photograph ${i}`;
+
+                // Wait for the image to load before calculating aspect ratio
+                img.onload = () => {
+                    const aspectRatio = img.naturalWidth / img.naturalHeight;
+                    images.push({ img, aspectRatio });
+
+                    // Once all images are loaded, sort them
+                    if (images.length === 56) {
+                        images.sort((a, b) => b.aspectRatio - a.aspectRatio);
+                        images.forEach(item => imageGrid.appendChild(item.img));
+                    }
+                };
+            }
+
+            galleryContainer.appendChild(imageGrid);
+        }
+
+    </script>
+</body>
+
+</html>

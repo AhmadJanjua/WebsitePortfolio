@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects - Ahmad Janjua's Portfolio</title>
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-bar">
+            <div class="window-buttons">
+                <a href="index.html">
+                    <div class="window-button close"></div>
+                </a>
+                <a href="projects.html">
+                    <div class="window-button maximize"></div>
+                </a>
+                <a href="gallery.html">
+                    <div class="window-button minimize"></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Back to Main Links -->
+        <div class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Links To Pages</span>
+        </div>
+
+        <div class="connect">
+            <p><a href="index.html">Home</a> - Back to the main page</p>
+            <p><a href="gallery.html">Gallery</a> - View my photography collection</p>
+            <p>INFO: My work related projects are showcased on my resume! Github is linked for each project.</p>
+        </div>
+
+        <!-- Command for Table of Content -->
+        <div class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Table of Contents</span>
+        </div>
+        <div class="project">
+            <nav class="projects-toc">
+                <ul>
+                    <li><a href="#graphics">Computer Graphics</a>
+                        <p>- [Ray Tracer|Solar System|Game]</p>
+                    </li>
+                    <li><a href="#side-proj">Side Projects</a>
+                        <p>- [Programming Language|Emulator]</p>
+                    </li>
+                    <li><a href="#ml">Data Science & AI</a>
+                        <p>- [ALS Recommender|CNN Classifier|AI Fundamentals]</p>
+                    </li>
+                    <li><a href="#web-app">Web Apps</a>
+                        <p>- [Forum|Bank Management App]</p>
+                    </li>
+                    <li><a href="#desktop-app">Desktop Apps</a>
+                        <p>- [Movie Theatre Ticket Reservation]</p>
+                    </li>
+                    <li><a href="#embedded">Embedded Systems</a>
+                        <p>- [Etch-A-Sketch|Stopwatch]</p>
+                    </li>
+                    <li><a href="#network">Network</a>
+                        <p>- [Cloud Conversion App|Remote Shell]</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Command Graphics Project-->
+        <div id="graphics" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Computer Graphics</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/RayTracer" target="_blank">Ray Tracer</a>
+            </h1>
+            <p>
+                Developed a software-based ray tracer in C++ using OpenGL. This project implements recursive reflection,
+                refraction, and shadow algorithms while employing efficient scene management for
+                improved performance.
+            </p>
+            <div class="proj-grid">
+                <img src="project/ray1.png" alt="Ray cast scene 1">
+                <img src="project/ray2.png" alt="Ray cast scene 2">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/SolarSystem" target="_blank">Solar System</a>
+            </h1>
+            <p>
+                Implemented a dynamic solar system simulation in C++ using OpenGL and ImGui. The project includes custom
+                GLSL shaders for realistic Phong shading, modeling planetary surfaces and lighting effects. Interactive
+                controls allow for real-time manipulation of orbital parameters.
+            </p>
+            <div class="proj-grid">
+                <img src="project/solar_sys.png" alt="Solar System">
+            </div>
+
+            <h1>
+                <a href="https://github.com/JonMulyk/Starlit-Thicket-Arena" target="_blank">Racing Game [Repo Private]</a>
+            </h1>
+            <p>
+                **Work in progress.** Developing a racing game engine in C++ using OpenGL for rendering and PhysX for
+                physics simulation. My tasks include designing an AI module for pathfinding and motion planning, a
+                custom camera system, input handling, and integrating an Entity-Component-System (ECS) framework for
+                modular game architecture.
+            </p>
+            <div class="proj-grid">
+                <img src="project/game.png" alt="Game">
+            </div>
+        </div>
+
+        <!-- Command Side Project-->
+        <div id="side-proj" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Side Projects</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Interpreter" target="_blank">Programming Language</a>
+            </h1>
+            <p>
+                Implemented a custom, Lox-inspired programming language in Golang. The language supports
+                dynamic typing, functions, and system variables (timers). A custom interpreter and
+                interactive REPL were developed to execute and test code snippets.
+            </p>
+            <div class="proj-grid">
+                <p>Language Code:</p>
+                <img src="project/language1.png" alt="Language input">
+                <p>Output:</p>
+                <img src="project/language2.png" alt="Language output">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Emulator" target="_blank">Emulator</a>
+            </h1>
+            <p>
+                Developed a Chip-8 emulator in C++ using SDL, accurately replicating the behavior of the original Chip-8
+                system. The emulator handles CPU instructions, input/output operations, and timing, allowing for a
+                faithful reproduction of classic Chip-8 games.
+            </p>
+            <div class="proj-grid">
+                <img src="project/breakout.png" alt="Breakout on Chip-8">
+            </div>
+        </div>
+
+        <!-- Command Machine Learning Projects-->
+        <div id="ml" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Data Science and
+                AI</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Recommendation-Model" target="_blank">Spotify Song
+                    Recommender</a>
+            </h1>
+            <p>
+                Engineered a recommendation system using ALS-based collaborative filtering in SparkML on Google Colab.
+                This allowed for distributed training of the machine learning model.
+                The workflow involved extensive data preprocessing, model training, and integration with the Spotify API
+                to generate personalized song suggestions for new playlists.
+            </p>
+            <div class="proj-grid">
+                <img src="project/recommendations.png" alt="Recommendations">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Vegetable_Classifier" target="_blank">CNN Vegetable
+                    Classifier</a>
+            </h1>
+            <p>
+                Implemented a convolutional neural network (CNN) in TensorFlow for the classification of vegetables from
+                real-world images. The project involved dataset curation, model optimization through data augmentation
+                and hyperparameter tuning, and performance evaluation.
+            </p>
+            <div class="proj-grid">
+                <img src="project/cnn.png" alt="CNN Model">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/BareBones-AI" target="_blank">AI From Scratch</a>
+            </h1>
+            <p>
+                Developed foundational neural network models in MATLAB to explore machine learning principles. The
+                project covers implementations of the perceptron, Hebbian learning, pseudo-inverse methods, least mean
+                squares, and a basic deep learning backpropagation network, with a focus on understanding weight
+                optimization and matrix operations.
+            </p>
+            <div class="proj-grid">
+                <img src="project/inverseFace.png" alt="Inverse Face Reconstruction">
+                <img src="project/inverseNum.png" alt="Inverse Numerical Model">
+            </div>
+        </div>
+
+        <!-- Command Web App Projects-->
+        <div id="web-app" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Web Apps</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Hear-It-Here" target="_blank">Hear It Here</a>
+            </h1>
+            <p>
+                Built a full-stack web application using Django that functions as a music forum. The platform supports
+                user registration, profile management, content posting, and interactive community discussions,
+                underpinned by a robust backend and responsive front-end design.
+            </p>
+            <div class="proj-grid">
+                <img src="project/hear-it-here.png" alt="Hear It Here app">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/BankManagementSystem" target="_blank">Bank Management App</a>
+            </h1>
+            <p>
+                Developed a comprehensive banking management system using Django and Python. The application supports
+                multiple user roles (admins, employees, and customers) and is built on a robust database design to
+                handle OLTP operations efficiently.
+            </p>
+            <div class="proj-grid">
+                <img src="project/banking.png" alt="Bank Management App">
+            </div>
+        </div>
+
+        <!-- Command Desktop App Projects-->
+        <div id="desktop-app" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Desktop Apps</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/ticket-reservation" target="_blank">Movie Theater Reservation
+                    App</a>
+            </h1>
+            <p>
+                Created a Java desktop application for managing movie theater reservations. The system handles ticket
+                booking, screening schedules, and user account management with email authentication, emphasizing secure
+                transactions and efficient data handling.
+            </p>
+            <div class="proj-grid">
+                <img src="project/theatre.png" alt="Movie Theater Reservation App">
+            </div>
+        </div>
+
+        <!-- Command Embedded App Projects-->
+        <div id="embedded" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Embedded Apps</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Microcontroller-Projects/tree/main/App2.X"
+                    target="_blank">Etch-E-Sketch</a>
+            </h1>
+            <p>
+                Developed an interactive Etch-A-Sketch application using Python's Turtle graphics library. Integrated
+                with a microcontroller to process analog input from a potentiometer for drawing control, including
+                features for dynamic orientation adjustments. Detailed <a
+                    href="https://youtu.be/bsuvYXq3vgg" target="_blank">documentation</a> and a <a
+                    href="https://youtu.be/etBpvdaJOek" target="_blank">demonstration</a> are provided.
+            </p>
+            <div class="proj-grid">
+                <img src="project/app2.png" alt="Etch-E-Sketch App">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/Microcontroller-Projects/tree/main/App1.X" target="_blank">Stop
+                    Watch</a>
+            </h1>
+            <p>
+                Engineered a stop watch application in C that leverages microcontroller frequency for precise time
+                measurement. The project involves low-level hardware interfacing, real-time processing, and thorough
+                Detailed <a
+                    href="https://youtu.be/1DyWl1OHR9s" target="_blank">documentation</a> with a live <a
+                    href="https://youtu.be/qS4UWIyN4G0" target="_blank">demo</a>.
+            </p>
+            <div class="proj-grid">
+                <img src="project/counter_setup.png" alt="Stop Watch Setup">
+                <img src="project/counter.png" alt="Stop Watch Display">
+            </div>
+        </div>
+
+        <!-- Command Network Projects-->
+        <div id="network" class="cmd">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$ <span class="highlight">Network Apps</span>
+        </div>
+        <div class="project">
+            <h1>
+                <a href="https://github.com/AhmadElshiltawi/plasma-converter" target="_blank">Cloud File Conversion [Repo Private]</a>
+            </h1>
+            <p>
+                Developed a cloud-based file conversion service hosted on AWS. This system uses AWS Lambda to trigger
+                serverless functions and S3 buckets to handle file storage, automating the conversion of file formats
+                (e.g., DXF to OBJ) with scalability in mind.
+            </p>
+            <div class="proj-grid">
+                <img src="project/cloud-conversion.png" alt="Cloud File Conversion">
+            </div>
+
+            <h1>
+                <a href="https://github.com/AhmadJanjua/RemoteShell" target="_blank">Remote Shell</a>
+            </h1>
+            <p>
+                Implemented a secure remote shell tool in Python to allow command execution on a remote server. The
+                system supports file transfers between client and server, employing secure communication protocols and
+                robust error handling.
+            </p>
+            <div class="proj-grid">
+                <img src="project/remoteShell.png" alt="Remote Shell Interface">
+            </div>
+        </div>
+
+
+
+        <!-- Footer Command Prompt -->
+        <div class="pending">
+            <strong>ahmadjanjua</strong>@<strong>portfolio</strong>:~$
+            <textarea name="r" id="r" class="terminal-input"></textarea>
+            <p></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+/* Variables */
+:root {
+    --bg-color: #282828;
+    --bg-accent-color: #1E2021;
+
+    --text-primary-color: #EBDBB3;
+    --text-secondary-color: rgb(148, 218, 238);
+    --text-tertiary-color: rgb(255, 106, 106);
+    --text-quat-color: rgb(190, 190, 190);
+    --text-left-padding: 10px;
+
+    --primary-color: #679D69;
+    --secondary-color: #458588;
+    --tertiary-color: #D89921;
+    --quat-color: #b13834;
+}
+
+/* Set global parameters */
+* {
+    background: var(--bg-color);
+    color: var(--text-primary-color);
+    font-family: 'Courier New', monospace;
+    font-size: 12pt
+}
+
+/* Main window */
+.window {
+    border: 3px solid var(--tertiary-color);
+    border-radius: 3px;
+    min-height: 97vh;
+
+    strong {
+        font-size: 12pt;
+        color: var(--text-quat-color);
+    }
+}
+
+/* Creata the window bar */
+.window-bar {
+    background-color: var(--bg-accent-color);
+    padding: 10px 5px;
+    display: block flex;
+    align-items: center;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+}
+
+.close {
+    background-color: #ff5f56;
+}
+
+.maximize {
+    background-color: #ffbd2e;
+}
+
+.minimize {
+    background-color: #27c93f;
+}
+
+
+/* Single line command */
+.cmd {
+    padding-top: 10px;
+    padding-left: var(--text-left-padding);
+}
+.highlight {
+    font-weight: bolder;
+    font-size: large;
+    color: var(--text-tertiary-color);
+  }
+
+
+/* Terminal setup */
+.terminal {
+    padding-left: var(--text-left-padding);
+    display: flex;
+}
+
+.terminal img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--tertiary-color);
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+/* Set the font size for ascii art */
+.ascii-art {
+    pre {
+        font-size: 10pt;
+    }
+}
+
+
+/* Information configuration */
+.info {
+    padding-top: 10px;
+    padding-left: 50px;
+    line-height: 1em;
+    a {
+        color: var(--text-secondary-color);
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+}
+
+
+/* Set the link aesthetic */
+.connect {
+    padding-left: 40px;
+    display: grid;
+    a {
+        color: var(--text-secondary-color);
+    }
+}
+
+
+/* Set the last line command */
+.pending {
+    padding-left: var(--text-left-padding);
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 1em;
+    width: 80vw;
+}
+
+
+/* Some responsive behavior */
+@media screen and (max-width:725px) {
+    .terminal {
+        padding-left: var(--text-left-padding);
+        display: grid;
+    }
+
+    .terminal-input {
+        width: 30vw;
+    }
+}
+
+/* ==================== Gallery */
+.photography {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.image-grid img {
+    max-width: 250px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==================== Project */
+.project {
+    padding-left: var(--text-left-padding);
+    padding-bottom: 20px;
+    display: grid;
+
+    h1 {
+        padding-top: 30px;
+        color: var(--text-secondary-color);
+    }
+
+    h2 {
+        color: var(--text-tertiary-color);
+    }
+    
+}
+
+.projects-toc ul {
+    list-style: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    a {
+        color: var(--text-secondary-color);
+    }
+}
+
+.proj-grid {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proj-grid img {
+    width: auto;
+    height: auto;
+    max-width: min(98%, 700px);
+    max-height: 350px;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.proj-grid img:hover {
+    transform: scale(1.01);
+}
+
